@@ -5,7 +5,7 @@ html, body {
 }
 
 body {
-    background-image: url("assets/images/studioghibli.jpg"); 
+    background-image: url("../assets/images/studioghibli.jpg"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -158,7 +158,7 @@ body {
     cursor: pointer;
 }
 
-#tasklist {
+#taskList {
     width: 40px;
 }
 
@@ -374,4 +374,65 @@ li:hover::after {
 #footer {
     /* background-color: green; */
     grid-area: footer;
+}
+
+@media (max-width: 768px) {
+
+    html,
+    body {
+        overflow-y: auto;
+        height: auto;
+    }
+
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #contents {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    #leftSide,
+    #center,
+    #rightSide {
+        width: 100%;
+    }
+
+    #timerContainer {
+        width: 90%;
+        margin: 0 auto;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    #timer {
+        font-size: 4rem;
+        padding-top: 0;
+    }
+
+    #todolistContainer {
+        width: 90%;
+        height: auto;
+    }
+
+    #motiveText {
+        padding: 1rem;
+        text-align: center;
+        font-size: 1.8rem;
+    }
+
+    #buttons {
+        gap: 15px;
+    }
+
+    #startBtn,
+    #stopBtn,
+    #resetBtn {
+        margin: 0;
+    }
+
 }

@@ -6,7 +6,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("/assets/images/flowers-yn.png"); 
+    background-image: url("../assets/images/flowers-yn.png"); 
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
